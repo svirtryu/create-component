@@ -1,14 +1,17 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
 const path = require('path');
 const program = require('commander');
 const mustache = require('mustache');
 
-const { createFile, createDirectory } = require('../src/utils/files');
-const jsTemplate = fs.readFileSync(path.resolve(__dirname, '../src/templates/default-jsx.template')).toString();
-const cssTemplate = fs.readFileSync(path.resolve(__dirname, '../src/templates/default-css.template')).toString();
-const testTemplate = fs.readFileSync(path.resolve(__dirname, '../src/templates/default-test.template')).toString();
+const {
+  readTemplateToString,
+  createFile,
+  createDirectory,
+} = require('../src/utils/files');
+const jsTemplate = readTemplateToString('default-jsx');
+const cssTemplate = readTemplateToString('default-css');
+const testTemplate = readTemplateToString('default-test');
 
 const componentName = process.argv[2];
 
