@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/svirtryu/create-component#readme",
   "dependencies": {
-    "commander": "^2.18.0"
+    "commander": "^2.18.0",
+    "mustache": "^3.0.0"
   }
 }
