@@ -1,0 +1,20 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+
+import styles from './ComponentName.css';
+
+export default function ComponentName = ({ property }) => {
+  return (
+    <div className={styles.componentStyle}>
+      {property}
+    </div>
+  );
+};
+
+ComponentName.propTypes = {
+  property: PropTypes.string,
+};
+
+ComponentName.defaultProps = {
+  property: 'value',
+};

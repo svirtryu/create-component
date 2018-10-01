@@ -2,7 +2,9 @@
   "name": "create-component",
   "version": "0.0.1",
   "description": "Simple tool for creating components and associated files",
-  "main": "index.js",
+  "bin": {
+    "create-component": "./bin/create-component.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/svirtryu/create-component/issues"
   },
-  "homepage": "https://github.com/svirtryu/create-component#readme"
+  "homepage": "https://github.com/svirtryu/create-component#readme",
+  "dependencies": {
+    "commander": "^2.18.0"
+  }
 }
