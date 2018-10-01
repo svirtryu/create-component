@@ -20,3 +20,4 @@ Assumes you are using:
 * `css-modules`
 * `jest`
 * `react`
+* `enzyme`
