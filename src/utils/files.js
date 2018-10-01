@@ -1,5 +1,18 @@
 const fs = require('fs');
 
+function createDirectory(withName) {
+  try {
+    fs.mkdirSync(withName);
+  }
+  catch (e) {
+    console.log(`Failed to create directory ${withName}. Most likely because the file already exists or you do not have permissions.`);
+
+    return false;
+  }
+
+  return true;
+}
+
 function createFile(withName, withExtension, withContent) {
   const fileName = [withName, withExtension].join('.');
 
@@ -18,5 +31,6 @@ function createFile(withName, withExtension, withContent) {
 }
 
 module.exports = {
+  createDirectory,
   createFile,
 };
