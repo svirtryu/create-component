@@ -3,13 +3,18 @@ import PropTypes from 'prop-types';
 
 import styles from './{{componentName}}.css';
 
-export default function {{componentName}} = ({ property }) => {
+/**
+ * {{componentName}}
+ * #### Replace with short description about this component ####
+ * @param {Type} property A description about this property
+ */
+export default function {{componentName}}({ property }) {
   return (
     <div className={styles.divStyle}>
       {property}
     </div>
   );
-};
+}
 
 {{componentName}}.propTypes = {
   property: PropTypes.string,

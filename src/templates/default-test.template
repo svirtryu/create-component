@@ -4,8 +4,6 @@ describe('{{componentName}}', () => {
   it('renders', () => {
     const wrapper = shallow(<{{componentName}} />);
 
-    const divElem = wrapper.find('div');
-
     expect(wrapper).toHaveClassName('divStyle');
   });
 });
