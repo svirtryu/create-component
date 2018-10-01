@@ -5,7 +5,7 @@ import styles from './{{componentName}}.css';
 
 export default function {{componentName}} = ({ property }) => {
   return (
-    <div className={styles.componentStyle}>
+    <div className={styles.divStyle}>
       {property}
     </div>
   );
