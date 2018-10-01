@@ -1,0 +1,19 @@
+{
+  "name": "create-component",
+  "version": "0.0.1",
+  "description": "Simple tool for creating components and associated files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/svirtryu/create-component.git"
+  },
+  "author": "Shaw Yu <syu@virtru.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/svirtryu/create-component/issues"
+  },
+  "homepage": "https://github.com/svirtryu/create-component#readme"
+}
