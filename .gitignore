@@ -1,0 +1,7 @@
+# Yarn/NPM
+node_modules/
+
+# IDEs
+
+# MacOS
+.DS_Store
