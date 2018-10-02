@@ -7,12 +7,25 @@ Saves time creating files, adding boilerplate, and writing the first simple test
 
 ## Usage
 
-```bash
-npm install -g create-component
+```
+$ npm install -g create-component
 ```
 
 ```
-create-component <ComponentName>
+$ create-component <ComponentName>
+```
+
+## Output
+
+```
+$ create-component MyComponent
+$ ls
+MyComponent/
+$ cd MyComponent
+$ ls
+MyComponent.css
+MyComponent.js
+MyComponent.test.js
 ```
 
 Assumes you are using:
