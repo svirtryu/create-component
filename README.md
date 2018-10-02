@@ -8,7 +8,7 @@ Saves time creating files, adding boilerplate, and writing the first simple test
 ## Usage
 
 ```
-$ npm install -g create-component
+$ npm install -g git+ssh://git@github.com/svirtryu/create-component#semver:^1.0.0
 ```
 
 ```
