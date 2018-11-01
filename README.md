@@ -8,17 +8,21 @@ Saves time creating files, adding boilerplate, and writing the first simple test
 ## Usage
 
 ```
-$ npm install -g git+ssh://git@github.com/svirtryu/create-component#semver:^1.0.0
+$ npm install -g git+ssh://git@github.com/svirtryu/create-component#semver:^1.1.0
 ```
 
 ```
-$ create-component <ComponentName>
+$ create-component <ComponentName> [targetDirectory]
 ```
 
 ## Output
 
 ```
 $ create-component MyComponent
+Creating directory MyComponent.
+Creating file MyComponent/MyComponent.js.
+Creating file MyComponent/MyComponent.css.
+Creating file MyComponent/MyComponent.test.js.
 $ ls
 MyComponent/
 $ cd MyComponent
