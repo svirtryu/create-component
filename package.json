@@ -1,6 +1,6 @@
 {
   "name": "create-component",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple tool for creating components and associated files",
   "bin": {
     "create-component": "./bin/create-component.js"

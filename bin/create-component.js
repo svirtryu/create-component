@@ -14,11 +14,12 @@ const cssTemplate = readTemplateToString('default-css');
 const testTemplate = readTemplateToString('default-test');
 
 const componentName = process.argv[2];
+const targetDirectory = process.argv[3] || './';
 
 if (componentName) {
-  createDirectory(componentName);
+  createDirectory(path.join(targetDirectory, componentName));
 
-  const componentFilePath = path.join(componentName, componentName);
+  const componentFilePath = path.join(targetDirectory, componentName, componentName);
 
   createFile(
     componentFilePath,
@@ -36,5 +37,5 @@ if (componentName) {
     mustache.render(testTemplate, { componentName }),
   );
 } else {
-  console.log('Usage: create-component <ComponentName>');
+  console.log('Usage: create-component <ComponentName> [<targetDirectory>]');
 }

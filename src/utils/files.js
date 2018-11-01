@@ -12,6 +12,8 @@ function readTemplateToString(templateName) {
 
 function createDirectory(withName) {
   try {
+    console.log(`Creating directory ${withName}.`);
+
     fs.mkdirSync(withName);
   }
   catch (e) {
@@ -27,6 +29,8 @@ function createFile(withName, withExtension, withContent) {
   const fileName = [withName, withExtension].join('.');
 
   try {
+    console.log(`Creating file ${fileName}.`);
+
     fs.writeFileSync(fileName, withContent, {
       flag: 'wx',
     });
